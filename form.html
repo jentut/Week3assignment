@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: "Shalimar";
+            font-size: 4em;
+        }
+    </style>
+
+    <title>Form Page</title>
 
 </head>
 
-<body>
+<body class="bg-body-secondary">
 <!--Navigation Bar- Include target="_blank" to make sure the external links open in another page-->
-   <nav class="navbar navbar-expand-lg bg-body-secondary">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
      
         <a class="navbar-brand" href="#">Navbar</a>
@@ -57,9 +68,28 @@
   </nav>
 
 <!--Include a fun header-->
+<h1 class="mb-5 mt-5 text-center"> Complete the Form to Receive More Information About Your Favorite Plants<h1>
 
-
-
+    <!--Form for more information-->
+    <!--I couldn't figure out why the form didn't have the default text.  I only wanted to use the fancy text for the title, not everything.-->
+    <div class="container mt-3>
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="mb-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+          <div class="form-check mb-3">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
