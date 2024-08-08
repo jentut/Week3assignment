@@ -4,12 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: "Shalimar";
+            font-size: 4em;
+        }
+    </style>
+    <title>Week 3 Assignment</title>
 </head>
 <body>
-  
-    
 
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Form Page</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plant Experts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.famousinoregon.com/" target="_blank">Tanner the Planter</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://costafarms.com/blogs/get-growing/plant-care-tips" target="_blank">Costa Farms</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://youtu.be/fb3pgKd9kJw?si=kIWr2IluWWxv9Vmo" target="_blank">Plant Life with Ashley</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--Put main top banner here -->
+    <div>
+     <img src="images/Pink Banner.jpg" 
+     class= "container-fluid" 
+     alt="Banner stating Just Jen and You Grow Girl" 
+     width="2000">
+    </div>
+<div>
+<h1 class="mb-5 text-center"> I don't need less plants.  I need more shelves
+</h1>
+</div>
 
 
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
