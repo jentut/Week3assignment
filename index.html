@@ -16,34 +16,32 @@
     <title>Week 3 Assignment</title>
 </head>
 <body class="bg-body-secondary">
-
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home Page</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="form.html">Form Page</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Plant Experts
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://www.famousinoregon.com/" target="_blank">Tanner the Planter</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="https://costafarms.com/blogs/get-growing/plant-care-tips" target="_blank">Costa Farms</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="https://youtu.be/fb3pgKd9kJw?si=kIWr2IluWWxv9Vmo" target="_blank">Plant Life with Ashley</a></li>
-                </ul>
-              </li>
+  <!--I'm not sure about the indenting on some of this. It seems pretty messy however, this is the way it was on Bootstrap.-->
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Form Page</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plant Experts</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.famousinoregon.com/" target="_blank">Tanner the Planter</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://costafarms.com/blogs/get-growing/plant-care-tips" target="_blank">Costa Farms</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="https://youtu.be/fb3pgKd9kJw?si=kIWr2IluWWxv9Vmo" target="_blank">Plant Life with Ashley</a></li>
             </ul>
+        </li>
+      </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -52,6 +50,7 @@
         </div>
       </nav>
     <!--Put main top banner here -->
+  <div id=" main container" class="container" pt-2 pb-5>
     <div>
      <img src="images/Pink Banner.jpg" 
      class= "container-fluid" 
@@ -59,71 +58,80 @@
      width="2000">
     </div>
 
-<!--Add a little fun Saying about plants-->
-<div>
-<h1 class="mb-3 text-center"> I don't need less plants.  I need more shelves
-</h1>
-</div>
+    <!--Add a little fun Saying about plants.  Have is medium sized and centered-->
+    <div class="container fs-6 mb-3 text-center">
+      <h1> I don't need less plants.  I need more shelves. </h1>
+    </div>
 
-<!--Information about benefits of plants-->
-<div class="mb-5">
-    <p>House plants do more than just beautify your living space; they also improve air quality and contribute to your well-being. By absorbing carbon dioxide and releasing oxygen, plants help purify indoor air and reduce the presence of toxins like formaldehyde and benzene. This natural air filtration process makes your environment healthier and more refreshing. Additionally, plants can lower stress levels and enhance relaxation, with studies showing that their presence can reduce anxiety and improve mood.<p>
+    <!--Information about benefits of plants. Will stretch the full page-->
+    <div class="container fs-5 mb-5">
+      <div class="row">
+        <p>House plants do more than just beautify your living space; they also improve air quality and contribute to your well-being. By absorbing carbon dioxide and releasing oxygen, plants help purify indoor air and reduce the presence of toxins like formaldehyde and benzene. This natural air filtration process makes your environment healthier and more refreshing. Additionally, plants can lower stress levels and enhance relaxation, with studies showing that their presence can reduce anxiety and improve mood.<p>
         
-    <p>Beyond their health benefits, house plants add vibrant color and texture to your home, creating a more inviting and aesthetically pleasing atmosphere. Whether you choose a lush fern for the living room or a compact succulent for your desk, plants offer a simple way to personalize and elevate your decor. With minimal care, these green companions can transform your space into a healthier, more serene environment.</p>
-</div>
+        <p>Beyond their health benefits, house plants add vibrant color and texture to your home, creating a more inviting and aesthetically pleasing atmosphere. Whether you choose a lush fern for the living room or a compact succulent for your desk, plants offer a simple way to personalize and elevate your decor. With minimal care, these green companions can transform your space into a healthier, more serene environment.</p>
+      </div>
+    </div>
+    <!--Insert the first card that will be on the far left of the screen (Col1).-->    
+    <div class="container mb-3 p-1">
 
-<!--Insert simple table with plant images and names-->
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Ranking</th>
-        <th scope="col">Name</th>
-        <th scope="col">Image</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Pothos</td>
-        <td><img src="images/pothos.jpg" width="200"></td>
-       
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Cactus</td>
-        <td><img src="images/cactus.jpg" width="200"></td>     
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Spider Plant</td>
-        <td><img src="images/spider plant.jpg" width="200"></td>
-     
-      </tr>
-    </tbody>
-  </table>
+      <div class="row">
 
-<!--insert a few cards about other favorite plants-->
-<div class="card"  style="width: 18rem;">
-    <img src="images/anthurium.jpg" class="card-img-top" alt="Image of an Anthurium leaf">
-    <div class="card-body">
-      <h5 class="card-title">Anthurium</h5>
-      <p class="card-text">Anthurium, commonly known as Flamingo Flower, Tail Flower, or Painted Tongue Plant, is a fascinating houseplant with heart-shaped "flowers" that are, in fact, colorful waxy leaves called spathes. If you're new to caring for Anthurium, this beginner's guide will help you keep these beautiful plants thriving.</p>
-      <a href="https://www.leafenvy.co.uk/blogs/plant-care-tips/anthurium-care-a-comprehensive-guide-for-beginners" class="btn btn-primary" target="_blank" >Care Tips</a>
+        <div class="col-md-4">
+
+          <div class="card"  style="width: 18rem;">
+            <img src="images/anthurium.jpg" class="card-img-top" alt="Image of an Anthurium leaf" width="100">
+            <div class="card-body">
+              <h5 class="card-title">Anthurium</h5>
+                <p class="card-text">Anthurium, commonly known as Flamingo Flower, Tail Flower, or Painted Tongue Plant, is a fascinating houseplant with heart-shaped "flowers" that are, in fact, colorful waxy leaves called spathes. If you're new to caring for Anthurium, this beginner's guide will help you keep these beautiful plants thriving.</p>
+                <a href="https://www.leafenvy.co.uk/blogs/plant-care-tips/anthurium-care-a-comprehensive-guide-for-beginners" class="btn btn-primary" target="_blank" >Care Tips</a>
+            </div>
+          </div>
+        </div>
+           <!--Insert simple table with plant images and names.  Insert between the two cards (col2) on one row.-->
+        <div class="col-md-4">
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Ranking</th>
+                <th scope="col">Name</th>
+                <th scope="col">Image</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                  <td>Pothos</td>
+                  <td><img src="images/pothos.jpg" width="200"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                  <td>Cactus</td>
+                  <td><img src="images/cactus.jpg" width="200"></td>     
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                  <td>Spider Plant</td>
+                  <td><img src="images/spider plant.jpg" width="200"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+           <!--insert a last card that will be on the far right (col3) in one row-->
+        <div class="col-md-4">
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/grow-alocasia.webp" class="card-img-top" alt="Image of an Alocasia" width="100">
+            <div class="card-body">
+              <h5 class="card-title">Alocasia</h5>
+              <p class="card-text">Alocasia, or elephant's ear, are popular indoor plants with large heart-shaped or arrow-shaped leaves that grow from tuberous rhizomes. Several species in the genus are prized for their prominent veins or variegation.</p>
+              <a href="https://www.thespruce.com/grow-alocasia-indoors-1902735" class="btn btn-primary" target="_blank" >Care Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="images/grow-alocasia.webp" class="card-img-top" alt="Image of an Anthurium leaf">
-    <div class="card-body">
-      <h5 class="card-title">Alocasia</h5>
-      <p class="card-text">Alocasia, or elephant's ear, are popular indoor plants with large heart-shaped or arrow-shaped leaves that grow from tuberous rhizomes. Several species in the genus are prized for their prominent veins or variegation.</p>
-      <a href="https://www.thespruce.com/grow-alocasia-indoors-1902735" class="btn btn-primary" target="_blank" >Care Tips</a>
-    </div>
-  </div>
-
-
-
-
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
